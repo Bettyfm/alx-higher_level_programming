@@ -7,11 +7,11 @@ def islower(c):
 
 
 def uppercase(str):
+    upp_str = ""
     for c in str:
-        C = c
         if islower(c):
-            C = chr(ord(c) - 32)
-            print("{}".format(C), end=" ")
+            upp_str += chr(ord(c) - 32)
         else:
-            print("{}".format(c), end=" ")
-    print("")
+            upp_str += c
+
+    print("{}".format(upp_str))
